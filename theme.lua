@@ -14,8 +14,32 @@ hl.exec_cmd("killall -9 waybar mako dunst swaync 2>/dev/null; systemctl --user s
 hl.exec_cmd(os.getenv("HOME") .. "/.local/bin/ags quit -i cyberpunk 2>/dev/null")
 hl.exec_cmd("sleep 1 && " .. cyberpunk .. "/scripts/launch-theme")
 hl.exec_cmd(cyberpunk .. "/scripts/ws pin")
-hl.exec_cmd("awww img " .. os.getenv("HOME") .. "/.config/hypr/themes/cyberpunk/assets/img/lucy_wallpaper.png")
+hl.exec_cmd("pgrep -x awww-daemon >/dev/null || awww-daemon --format xrgb --no-cache; sleep 0.8; awww img -o DP-2,HDMI-A-2 " .. os.getenv("HOME") .. "/.config/hypr/themes/cyberpunk/assets/img/lucy_wallpaper.png")
 once(cyberpunk .. "/components/login/lock.sh")
+
+
+hl.config({
+    input = {
+        kb_layout = "tr",          -- Turkish
+        follow_mouse = 1,
+        sensitivity = 0,
+    }
+})
+
+hl.monitor({
+    output = "HDMI-A-2",          -- physical LEFT monitor (VP248)
+    mode = "1920x1080@60",
+    position = "0x0",
+    scale = 1
+})
+
+hl.monitor({
+    output = "DP-2",              -- physical RIGHT monitor (VG279Q3A)
+    mode = "1920x1080@60",
+    position = "1920x0",
+    scale = 1
+})
+
 
 hl.exec_cmd("mkdir -p " .. os.getenv("HOME") .. "/.config/kitty && ln -sfn " .. cyberpunk .. "/assets/kitty/kitty.conf " .. os.getenv("HOME") .. "/.config/kitty/kitty.conf")
 hl.exec_cmd("mkdir -p " .. os.getenv("HOME") .. "/.local/share/icons && ln -sfn " .. cyberpunk .. "/assets/gtk/iconpack " .. os.getenv("HOME") .. "/.local/share/icons/iconpack")
