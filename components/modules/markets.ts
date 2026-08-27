@@ -72,7 +72,6 @@ const GLOBAL_FEEDS = [
     { feed: "BBC WORLD", url: "https://feeds.bbci.co.uk/news/world/rss.xml" },
     { feed: "GUARDIAN WORLD", url: "https://www.theguardian.com/world/rss" },
 ]
-
 let pins: any = { stocks: ["NVDA", "SPCX", "SNDK", "INTC", "MU"], crypto: ["bitcoin", "ethereum", "solana", "monero", "venice-token"] }
 let tab = "crypto"
 let quotes: any = {}
@@ -208,10 +207,7 @@ const readCity = () => {
         const [ok, data] = GLib.file_get_contents(`${CYBER_DIR}/city.json`)
         if (ok) {
             const o = JSON.parse(new TextDecoder().decode(data))
-            return {
-                name: String(o.name || "LOCAL").trim(),
-                full: String(o.full || o.name || "LOCAL").trim(),
-            }
+            return { name: String(o.name || "LOCAL").trim(), full: String(o.full || o.name || "LOCAL").trim() }
         }
     } catch { }
     return { name: "LOCAL", full: "LOCAL" }
@@ -220,29 +216,10 @@ const readCity = () => {
 const countryCode = (full: string) => {
     const txt = String(full || "").toUpperCase()
     const map: any = {
-        "UNITED STATES": "US",
-        "UNITED KINGDOM": "GB",
-        "ENGLAND": "GB",
-        "SCOTLAND": "GB",
-        "WALES": "GB",
-        "NORTHERN IRELAND": "GB",
-        "PORTUGAL": "PT",
-        "FRANCE": "FR",
-        "GERMANY": "DE",
-        "SPAIN": "ES",
-        "ITALY": "IT",
-        "CANADA": "CA",
-        "AUSTRALIA": "AU",
-        "IRELAND": "IE",
-        "NETHERLANDS": "NL",
-        "BELGIUM": "BE",
-        "SWEDEN": "SE",
-        "NORWAY": "NO",
-        "FINLAND": "FI",
-        "DENMARK": "DK",
-        "POLAND": "PL",
-        "SWITZERLAND": "CH",
-        "AUSTRIA": "AT",
+        "UNITED STATES": "US", "UNITED KINGDOM": "GB", "ENGLAND": "GB", "SCOTLAND": "GB", "WALES": "GB", "NORTHERN IRELAND": "GB",
+        "PORTUGAL": "PT", "FRANCE": "FR", "GERMANY": "DE", "SPAIN": "ES", "ITALY": "IT", "CANADA": "CA", "AUSTRALIA": "AU",
+        "IRELAND": "IE", "NETHERLANDS": "NL", "BELGIUM": "BE", "SWEDEN": "SE", "NORWAY": "NO", "FINLAND": "FI", "DENMARK": "DK",
+        "POLAND": "PL", "SWITZERLAND": "CH", "AUSTRIA": "AT",
     }
     for (const [k, v] of Object.entries(map)) if (txt.includes(k)) return v
     return "US"
@@ -445,10 +422,8 @@ const newsFeedsForPage = (city: any, page: number) => {
     const queries = NEWS_BATCH_QUERIES[page % NEWS_BATCH_QUERIES.length] || NEWS_BATCH_QUERIES[0]
     const extraStart = (page * EXTRA_FEEDS_PER_PAGE) % EXTRA_NEWS_FEEDS.length
     const extra: any[] = []
-    for (let i = 0; i < EXTRA_FEEDS_PER_PAGE; i++)
-        extra.push(EXTRA_NEWS_FEEDS[(extraStart + i) % EXTRA_NEWS_FEEDS.length])
-    const cityName = city.name || "LOCAL"
-    const cityFull = city.full || cityName
+    for (let i = 0; i < EXTRA_FEEDS_PER_PAGE; i++) extra.push(EXTRA_NEWS_FEEDS[(extraStart + i) % EXTRA_NEWS_FEEDS.length])
+    const cityName = city.name || "LOCAL", cityFull = city.full || cityName
     const localQuery = page % 2 === 0 ? `${cityFull} news when:${Math.max(7, days)}d` : `${cityName} breaking local news when:${Math.max(7, days)}d`
     return [
         ...queries.map((q, i) => {

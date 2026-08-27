@@ -71,6 +71,28 @@ cyberpunk/
 └─ assets/             # fonts, cursor, icons, kitty, kvantum, hyprbars, and resources
 ```
 
+## ⌁ TO-DO
+
+- [ ] Replace the Markets **News** tab's general and local news sources with
+  computer-science research channels. Start with arXiv category feeds such as
+  `cs.AI`, `cs.LG`, `cs.CL`, `cs.CV`, `cs.CR`, `cs.DC`, `cs.SE`, and `cs.HC`;
+  preserve pagination, duplicate filtering, publication timestamps, summaries,
+  source labels, error handling, and the existing modal interaction model.
+- [ ] Add a small C program that emits structured, tagged status messages to
+  the system journal so it can be followed with `journalctl -t <tag> -f`.
+  Define a stable tag, command-line options for interval and sample count,
+  graceful SIGINT/SIGTERM handling, and useful fields such as hostname, load,
+  memory, uptime, and severity. Include a minimal Makefile and README build,
+  run, and journal-query instructions.
+- [ ] Fix the forecast minimap so it identifies the exact city selected in the
+  weather search. Trace location persistence in `city.json` and the tile logic
+  in `components/modules/sidepanel.ts`; remove any synthetic coordinate offset,
+  correctly center/crop Web-Mercator tiles around the selected latitude and
+  longitude, retain coordinate labels, and render a clear location marker.
+- [ ] Add focused verification for the research-feed parser, journal monitor,
+  and location-to-map conversion, including offline/error behavior and tile
+  rendering for locations near longitude/date boundaries.
+
 
 
 
