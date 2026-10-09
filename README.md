@@ -1,57 +1,48 @@
+# Neuro's Arch Dotfiles
 
-<div align="center">
+> Lowkey I wanna call it _NeurOS_ OwO
 
-<img width="768" height="432" alt="title" src="https://github.com/user-attachments/assets/e2e359db-0e47-44a8-b339-710c5c50e190" />
 
-<p align="center">
-  <img src="https://img.shields.io/badge/AGS 3.0-ff2d3d?style=for-the-badge&logo=gtk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Quickshell-ff2d3d?style=for-the-badge&logo=qt&logoColor=white" />
-  <img src="https://github-view-counter.vercel.app/api?username=cyberarch&label=Views:&style=square&bgColor=ff2d3d&color=ffffff" />
-  <img src="https://img.shields.io/badge/HYPRLAND-ff2d3d?style=for-the-badge&logo=hyprland&logoColor=white" />
-  <img src="https://img.shields.io/badge/ARCH_LINUX-ff2d3d?style=for-the-badge&logo=arch-linux&logoColor=white" />
 
-  
-</p>
+
 
 ### **A Hyprland *netrunner* rice with built on AGS v3 / Astal**
 
 
-</div>
 
 
 
-# // Theme Showcase
+## Table of Contents
 
-<table border="0">
-    <tr> 
-      <img width="1920" height="1080" alt="2026-08-20_17-23-36" src="https://github.com/user-attachments/assets/a80ba225-08e2-40e9-bbaf-3032739a9fef" />
-    </tr>
-  <tr>
-    <td>
-      <img width="1009" height="748" alt="2026-08-20_21-09-27" src="https://github.com/user-attachments/assets/85fc85fa-6130-4c14-bb7b-eb20a10da8c6" />
-    </td>
-    <td>
-<video src="https://github.com/user-attachments/assets/86e78d03-7522-4671-9e63-a67953ab1e7e"></video>
-    </td>
-  </tr>
-</table>
+- [HERE](#table-of-contents)
+- [Original Author](#support-the-original-author)
+- [**Check before going further**](#note)
+- [Shit todo](#shit-to-do-list)
 
-### Video preview
+### Note 
 
-https://github.com/user-attachments/assets/f8affc37-d25d-404c-bd02-df04892cfec8
+- If the sections down below is explaining something kindly it is the original dev and if some feral goblin cussing and telling you why that's gonna be perfect... that's probably me...
 
----
+> I didn't touch most of the readme yet because I did not touch the code and removing the original version before fucking with files feels wrong UnU
 
 
-## ⌁ Welcome to Night City, Choom. ::
 
-<img src="https://github.com/user-attachments/assets/29ad19da-6f6f-448d-99d3-b2719943e091" align="right" width="30%" style="margin-left: 20px;">
 
-This is my attempt to recreate Cyberpunk 2077 UI entirely on **Hyprland**, using AGS/Astal to build the HUD similar to the in-game overlay including the widgets, minimaps, and more themed features.
+### Shit to-do list
 
-<br clear="right"/>
+- [ ] Changing some sound effect
+
+- [ ] UI tweaks
+
+- [ ] Optional NSD™ color themes
+
+- [ ] unskippable scope-creeep driven development
+
+
 
 ### About each component
+
+> Those are the original versions that I'll keeop 'till I fuck with them
 
 - **Health bars** -> The in-game UI bars meant for Health, Stamina, RAM and Level are copied to provide system monitors:
   - The level badge shows the current active workspace, like [1], [2] and etc.
@@ -93,77 +84,28 @@ This is my attempt to recreate Cyberpunk 2077 UI entirely on **Hyprland**, using
 
 ---
 
-## ⌁ Video previews
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <b>KILL MODE</b><br/>
-      <video src="https://github.com/user-attachments/assets/d40443b8-bd50-45cf-b63f-9b31fc5d6b03"></video>
-    </td>
-    <td width="50%" align="center">
-      <b>CONTROL MODALS</b><br/>
-            <video src="https://github.com/user-attachments/assets/9d151f4f-9913-4d86-8319-0def42cf349d"></video>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <b>APPS LAUNCHER</b><br/>
-      <video src="https://github.com/user-attachments/assets/31ce5454-1a20-466d-a249-3eec409fb46a"></video></td>
-    <td width="50%" align="center">
-      <b>MUSIC PLAYER</b><br/>
-<video src="https://github.com/user-attachments/assets/c0c2fc66-81d6-441c-9102-6409cc79ab2a"></video>
-    </td>
-  </tr>
-   <tr>
-    <td width="50%" align="center">
-      <b>SCREENSHOT / CAPTURE</b><br/>
-<video src="https://github.com/user-attachments/assets/1f0f25c0-4868-45c7-9099-ca9498c73dd3"></video>
-    </td>
-         <td width="50%" align="center">
-      <b>MESSAGES / APP TRAY
-</b><br/>
-<video src="https://github.com/user-attachments/assets/3ef2f30b-d5e6-4026-add8-aca9ae58b98d"></video>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <b>STREET CRED REPUTATION || AUR PACKAGE LISTENER ~~ UPDATES </b><br/>
-<video src="https://github.com/user-attachments/assets/401eb9e9-2a56-4b67-9afe-422d413be67d"></video>
-    </td>
-        <td width="50%" align="center">
-      <b>RipperCPU | Process manager </b><br/>
-<video src="https://github.com/user-attachments/assets/7fe5a447-7135-4949-9504-6a8de8fd0e35"></video>
-</td>
-  </tr>
-</table>
+## Requirements
 
-
----
-
-## ⌁ Requirements
-
-- **Arch Linux or AUR based distros.** _(Other distros will be available futurely)_
+- **Arch Linux or AUR based distros.**
 - **Hyprland ≥ 0.56**
 - An **AUR helper**: `yay` or `paru` (Always check PKGBUILD btw)
 - A running Hyprland session (so theming + first-run setup can apply)
 
 ---
 
-## ⌁ Install
+## Install
 
 ```bash
-git clone https://github.com/ARCANGEL0/CyberArch-Shell.git 
+git clone https://github.com/ARCANGEL0/CyberArch-Shell.git #for original 
 cd CyberArch-Shell 
 chmod +x install.sh
 ./install.sh
 ```
 
-The installer will download any required dependencies, install the theme, quickshell and the necessary packages, along with optional features such as fish, GPU Terminals in theme style, and wallpapers. 
-
 ---
 
-## ⌁ Updating
+## Updating
 
 ```bash
 cd ~/.config/hypr/themes/cyberpunk
@@ -181,7 +123,7 @@ before re-running it, then restarts the HUD.
 
 ---
 
-## ⌁ Keybinds
+## Keybinds
 
 The theme modifier is **`$themeMod = SUPER + SHIFT`**. You can change it on Theme Settings > Keybinds (or change it at the top of `config/keybinds.lua`). 
 Open the full cheat-sheet with all keybinds anytime with **`SUPER+SHIFT+H`**.
@@ -237,7 +179,7 @@ Open the full cheat-sheet with all keybinds anytime with **`SUPER+SHIFT+H`**.
 
 ---
 
-## ⌁ Layout
+## Layout
 
 ```
 cyberpunk/
@@ -262,27 +204,8 @@ cyberpunk/
 └─ preview/
 ```
 
-## TODO List
-
-- [x] Add modal controls like CPU/RAM monitors, battery modals etc.
-- [x] Draw HUD on N different monitors
-- [x] Add same notifications from CP2077 messages and add official audios from game
-- [x] Add "+ Street Cred" animation when installing new apps from pacman 
-  <br><img src="https://github.com/user-attachments/assets/55e4a3b6-3c01-4f4a-aa29-15e349aa43c0" width="20%"/>
-- [x] Add more notification chips on HUD such as 'AUR Update Available!'.
-- [x] Redraw Music Player to match CP2077 Radioport + Now Playing toast animation.
-- [x] Add the 'KEYSTORE' Terminal and add new features
-- [x] Add Stocks and live news feed on Net Terminal
-- [x] Add custom wallpapers and new login
-- [x] Add the RipperDoc GUI or something similar
-- [x] Login screen; configure SDDM as single default lockscreen with netwatch theme + quickshell for session lock.
-- [ ] Wallpaper picker: Create a themed overlay to switch wallpapers easily using awww and quickshell.
-- [ ] Theme configuration: Create a new modal using $themeMod + ESC to open theme configuration such as add/edit keybinds, animations, and general settings.
-<br>
-suggestions are welcome! :) 
 ---
-
-## ⌁ Credits
+## Credits
 
 - Built on **[Hyprland](https://hypr.land)**, **[AGS / Aylur's GTK Shell](https://github.com/Aylur/ags)**, and **[astal](https://github.com/Aylur/astal)**.
 - Lockscreen on **[quickshell](https://quickshell.org)**.
@@ -292,9 +215,7 @@ suggestions are welcome! :)
  
 <div align="center">
 
-## ❤️ Support
-
- ### if you enjoy the project and want to support future development:
+## Support the Original Author
 
 [![Star on GitHub](https://img.shields.io/github/stars/ARCANGEL0/CyberArch-DotFiles?style=social)](https://github.com/ARCANGEL0/CyberArch-dotfiles)
 [![Follow on GitHub](https://img.shields.io/github/followers/ARCANGEL0?style=social)](https://github.com/ARCANGEL0)
@@ -304,7 +225,6 @@ suggestions are welcome! :)
 <br>
 <strong>Hack the world. Byte by Byte.</strong> ⛛ <br>
 𝝺𝗿𝗰𝗮𝗻𝗴𝗲𝗹𝗼 @ 2026
-
 
 </div>
 
