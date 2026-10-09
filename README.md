@@ -3,13 +3,7 @@
 > Lowkey I wanna call it _NeurOS_ OwO
 
 
-
-
-
 ### **A Hyprland *netrunner* rice with built on AGS v3 / Astal**
-
-
-
 
 
 ## Table of Contents
@@ -27,7 +21,6 @@
 
 
 
-
 ### Shit to-do list
 
 - [ ] Changing some sound effect
@@ -38,7 +31,11 @@
 
 - [ ] unskippable scope-creeep driven development
 
+- [ ] Fish is cool but I might return to bash as the default shell
 
+- [ ] Cool retro-term support won't be here kitty is the default shell
+
+- [ ] There is a 'cyberspace' online terminal webkit GUI here but I haven't investigate it yet and wasn't working...so might ditch it as well
 
 ### About each component
 
